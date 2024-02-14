@@ -110,10 +110,10 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    line-height: 2.5rem;
 }
 .section__client__header p{
     color: var(--secondary-color-text);
+    margin-top: 1rem;
 }
 .section__client__icons{
     display: flex;
@@ -185,6 +185,7 @@
         flex-direction: column;
         text-align: center;
         height: 100%;
+        margin: 0;
     }
     .section__body__text{
         align-items: center;
@@ -193,7 +194,14 @@
         order: 2;
     }
     .section__body__image img, .footer .footer__image img{
-        width: 200px;
+        width: 250px;
+    }
+    .section__client__text, .section__client__header{
+        text-align: center;
+        padding: 0 1rem;
+    }
+    .section__client__organisation{
+        padding: 0 2rem;
     }
     .section__client__organisation, .footer{
         flex-direction: column;
@@ -202,4 +210,5 @@
         gap: 2.5rem;
         text-align: center;
     }
+   
 }
