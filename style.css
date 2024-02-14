@@ -192,6 +192,9 @@
     .section__body div:nth-child(1){
         order: 2;
     }
+    .section__body__image img, .footer .footer__image img{
+        width: 200px;
+    }
     .section__client__organisation, .footer{
         flex-direction: column;
     }
