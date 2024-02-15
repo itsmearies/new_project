@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
-<body>
+<body id="main">
     <nav class="nav__bar">
         <div class="nav__logo"><h1>Nexcent</h1></div>
         <div class="nav__links">
@@ -18,10 +18,12 @@
                 <li>Blog</li>
                 <li>Pricing</li>
                 <li><button>Register Now <i class='bx bx-right-arrow-alt'></i></button></li>
+               
             </ul>
         </div>
         <div class="nav__menu">
             <i class='bx bx-menu' id="menu"></i>
+            <i class='bx bx-sun' id="colorMode"></i>
         </div>
     </nav>
     <section class="section__body">
@@ -91,12 +93,18 @@
     </div>
     <script>
         let menuIcon = document.getElementById('menu');
+        let darkModeIcon = document.getElementById('colorMode');
 
-        document.getElementById('menu').addEventListener('click', () => {
+        menuIcon.addEventListener('click', () => {
             menuIcon.classList.toggle('bx-x');
             menuIcon.classList.toggle('bx-menu');
-
             document.querySelector('.nav__off__canvas').classList.toggle('show__nav');
+        });
+
+        darkModeIcon.addEventListener('click', () => {
+            darkModeIcon.classList.toggle('bx-moon');
+            darkModeIcon.classList.toggle('bx-sun');
+            document.getElementById('main').classList.toggle('dark__mode');
         });
     </script>
 </body>
