@@ -21,7 +21,7 @@
             </ul>
         </div>
         <div class="nav__menu">
-            <i class='bx bx-menu'></i>
+            <i class='bx bx-menu' id="menu"></i>
         </div>
     </nav>
     <section class="section__body">
@@ -79,6 +79,27 @@
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis impedit dolor nostrum assumenda, eveniet unde facilis aspernatur ea consequatur odit tempora sit, minus perferendis nulla rerum ipsum quam sunt modi est debitis voluptates reprehenderit maiores? Esse, sit. Beatae, nam harum.</p>
        </div>
     </footer>
+    <div class="nav__off__canvas">
+        <ul class="nav__links__list">
+            <li>Home</li>
+            <li>Features</li>
+            <li>Community</li>
+            <li>Blog</li>
+            <li>Pricing</li>
+            <li><button>Register Now <i class='bx bx-right-arrow-alt'></i></button></li>
+        </ul>
+    </div>
+    <script>
+        let menuIcon = document.getElementById('menu');
+
+        document.getElementById('menu').addEventListener('click', () => {
+            menuIcon.classList.toggle('bx-x');
+            menuIcon.classList.toggle('bx-menu');
+
+            document.querySelector('.nav__off__canvas').classList.toggle('show__nav');
+        });
+
+    </script>
 </body>
 </html>
 
