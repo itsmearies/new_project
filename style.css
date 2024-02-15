@@ -81,21 +81,19 @@
     cursor: pointer;
     margin-top: 1.5rem;
 }
-.section__body__image{
-    animation: imageFloat 3s ease-in-out 1s infinite;
-}
+
 @keyframes imageFloat {
-    0%{bottom: 0;}
-    50%{bottom: 8%;}
-    100%{bottom: 0;}
+    0%{transform: translateY(0);}
+    50%{transform: translateY(8%);}
+    100%{transform: translateY(0);}
 }
 .section__body__image, .footer .footer__image{
-    position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 .section__body__image img{
+    animation: imageFloat 3s ease-in-out 1s infinite;
     width: 400px;
     height: auto;
 }
@@ -172,7 +170,6 @@
 .footer .footer__image img{
     width: 400px;
     height: auto;
-    animation: imageFloat 3s ease-in-out 1s infinite;
 }
 .footer__description p{
     margin-top: 1rem;
@@ -193,8 +190,10 @@
     .section__body{
         flex-direction: column;
         text-align: center;
+        gap: 1.5rem;
         margin: 0;
         padding: 8.5rem 2rem;
+        height: auto;
     }
     .section__body h1{
         font-size: 2.5rem;
