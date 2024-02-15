@@ -121,6 +121,14 @@
     padding: 1.5em 0;
     font-size: 2rem;
 }
+.section__client__icons i{
+    position: relative;
+    cursor: pointer;
+    transition: color 1s ease-in-out;
+}
+.section__client__icons i:hover{
+   color: var(--background-primary-button);
+}
 .section__client__text{
     display: flex;
     flex-direction: column;
@@ -164,6 +172,7 @@
 .footer .footer__image img{
     width: 400px;
     height: auto;
+    animation: imageFloat 3s ease-in-out 1s infinite;
 }
 .footer__description p{
     margin-top: 1rem;
@@ -184,8 +193,8 @@
     .section__body{
         flex-direction: column;
         text-align: center;
-        height: 100%;
         margin: 0;
+        padding: 8.5rem 2rem;
     }
     .section__body__text{
         align-items: center;
@@ -209,6 +218,6 @@
     .footer{
         gap: 2.5rem;
         text-align: center;
+        padding: 10rem 2rem;
     }
-   
 }
