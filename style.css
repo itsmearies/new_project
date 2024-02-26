@@ -18,7 +18,24 @@
     --primary-text-color: #fff;
 }
 #main{
+    position: relative;
     background-color: var(--primary-background-color);
+}
+.scroll__nav{
+    position: fixed;
+    background-color: var(--background-primary-button);
+    color: #fff;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    bottom: 4rem;
+    right: 1.5rem;
+    border-radius: 50%;
+    padding: .5rem;
+    width: auto;
+    height: auto;
+    cursor: pointer;
 }
 .nav__bar{
     position: fixed;
@@ -70,6 +87,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    gap: 5rem;
     padding: 8.5rem;
     margin: 0 3rem;
 }
@@ -202,7 +220,7 @@ h1{
     backdrop-filter: blur(1.5rem);
     width: 100%;
     padding: 2rem;
-    transition: transform .5s ease-in-out;
+    transition: transform .4s linear;
     top: 60px;
 }
 .show__nav{
